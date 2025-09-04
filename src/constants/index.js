@@ -16,6 +16,11 @@ export const navLinks = [
   },
   {
     id: 4,
+    name: "Education",
+    href:"#education"
+  },
+  {
+    id: 5,
     name: "Contact",
     href: "#contact",
   },
@@ -110,3 +115,130 @@ export const workExperiences = [
     animation: "coding",
   },
 ];
+
+export const education = [
+  {
+    school: "University of Central Florida",
+    degree: "M.S. in Computer Science",
+    logo: "/assets/ucf.jpeg",
+    duration: "2025 – 2027 (expected)",
+    highlights: [
+      "Specialization in Cybersecurity and Algorithms",
+    ],
+    subjects: [
+      "CIS 6395 - Incident Response Technologies",
+      "CIS 6614 - Advanced Software Systems Security",
+      "COT 5405 - Design and Analysis of Algorithms",
+    ],
+    animation: "clapping"
+  },
+  {
+    school: "Dayananda Sagar University",
+    degree: "B.Tech. in Computer Science (AI and ML)",
+    duration: "2021 – 2025",
+    logo: "/assets/dsu.png",
+    highlights: [
+      "Graduated with Distinction",
+      "Completed projects in AI, Cloud, and Full-Stack Development",
+    ],
+    semesters: [
+      {
+        semester: "I Semester",
+        subjects: [
+          "Linear Algebra and Calculus",
+          "Engineering Chemistry",
+          "Basic Electrical Engineering",
+          "Elements of Mechanical Engineering",
+          "Fundamentals of Programming",
+          "Environmental Sciences",
+          "Kannada",
+        ],
+      },
+      {
+        semester: "II Semester",
+        subjects: [
+          "Probability and Statistics",
+          "Discrete Mathematical Structures",
+          "Data Structures",
+          "Digital Electronics and Logic Design",
+          "Full Stack Development",
+          "Computational Thinking with Python",
+          "Data Structures Lab",
+          "Digital Electronics and Logic Design Lab",
+          "Placement and Entrepreneurship",
+          "Liberal Studies - I",
+        ],
+      },
+      {
+        semester: "III Semester",
+        subjects: [
+          "Transforms and Differential Equations",
+          "Engineering Physics",
+          "Basic Electronics",
+          "Engineering Graphics and Design",
+          "Engineering Mechanics",
+          "Biological Sciences",
+          "Technical Communication",
+          "Design Thinking",
+          "Constitution of India and Ethics",
+        ],
+      },
+      {
+        semester: "IV Semester",
+        subjects: [
+          "Artificial Intelligence",
+          "Foundation of Data Science",
+          "Artificial Intelligence Laboratory",
+          "Design and Analysis of Algorithms",
+          "Principles of Microprocessors and Computer Organization",
+          "Finite Automata and Formal Languages",
+          "Software Engineering and Project Management",
+          "Design and Analysis of Algorithms Lab",
+          "Special Topics - I",
+          "Liberal Studies - II",
+        ],
+      },
+      {
+        semester: "V Semester",
+        subjects: [
+          "Database Management Systems",
+          "Introduction to Networks and Cybersecurity",
+          "Object Oriented Programming with Java",
+          "Machine Learning",
+          "Special Topics",
+          "Database Management Systems Laboratory",
+          "OOP with Java Lab",
+          "Machine Learning for Pattern Recognition",
+          "Fundamentals of Cloud Computing",
+        ],
+      },
+      {
+        semester: "VI Semester",
+        subjects: [
+          "Capstone Project (Phase II)",
+          "Skill Enhancement Course (Advanced Java)",
+          "Speech Processing and Game Technology",
+          "Big Data Analytics",
+          "Technology Strategy",
+          "Compiler Design and System Software",
+          "Natural Language Models",
+          "Deep Learning & Computer Vision",
+          "Compiler Design and System Software Lab",
+          "Deep Learning and Computer Vision Lab",
+          "Explainable AI",
+          "Advanced Data Science",
+          "Social Networks and Analytics",
+        ],
+      },
+      {
+        semester: "VII Semester",
+        subjects: [
+          "Capstone Project (Phase I)",
+          "Financial Technology (FinTech)",
+        ],
+      },
+    ],
+    animation: "victory",
+  },
+];
+

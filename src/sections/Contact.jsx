@@ -23,15 +23,15 @@ const Contact = () => {
     emailjs
       .send(
         "service_had1ogr",
-        "template_68tmie3",
+        "template_80ogg9g",
         {
           from_name: form.name,
           to_name: "Venkat BS",
           from_email: form.email,
-          to_email: "manojbhandare02@gmail.com",
+          to_email: "venkatbs500@gmail.com",
           message: form.message,
         },
-        "2vXC2x8ATWPE6wyAF"
+        "MlhDVR3xdncPvvMIJ"
       )
       .then(
         () => {

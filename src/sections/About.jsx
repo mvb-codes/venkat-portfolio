@@ -5,16 +5,17 @@ import Button from '../components/Button.jsx';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
+   const [copiedText, setCopiedText] = useState("");
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText('  venkatbs500@gmail.com');
-    setHasCopied(true);
+ 
+  const handleCopy = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopiedText(text);
 
     setTimeout(() => {
-      setHasCopied(false);
+      setCopiedText("");
     }, 2000);
   };
-
   return (
   
 <section className="c-space my-20 px-4 sm:px-6 lg:px-12" id="about">
@@ -144,15 +145,33 @@ const About = () => {
         />
         <div className="space-y-5 text-center">
           <p className="grid-subtext">Contact me</p>
-          <div 
-            className="copy-container flex items-center justify-center gap-2 cursor-pointer p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition"
-            onClick={handleCopy}
-          >
-            <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-            <p className="lg:text-xl md:text-lg font-medium text-gray_gradient text-white">
-              venkatbs500@gmail.com
-            </p>
-          </div>
+          {/* Email Copy */}
+              <div
+                className="copy-container flex items-center justify-center gap-2 cursor-pointer p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition"
+                onClick={() => handleCopy("venkatbs500@gmail.com")}
+              >
+                <img
+                  src={copiedText === "venkatbs500@gmail.com" ? "assets/tick.svg" : "assets/copy.svg"}
+                  alt="copy"
+                />
+                <p className="lg:text-xl md:text-lg font-medium text-white">
+                  venkatbs500@gmail.com
+                </p>
+              </div>
+
+              {/* Phone Copy */}
+              <div
+                className="copy-container flex items-center justify-center gap-2 cursor-pointer p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition"
+                onClick={() => handleCopy("+1 4072274878")}
+              >
+                <img
+                  src={copiedText === "+1 4072274878" ? "assets/tick.svg" : "assets/copy.svg"}
+                  alt="copy"
+                />
+                <p className="lg:text-xl md:text-lg font-medium text-white">
+                  +1 4072274878
+                </p>
+              </div>
         </div>
       </div>
     </div>
